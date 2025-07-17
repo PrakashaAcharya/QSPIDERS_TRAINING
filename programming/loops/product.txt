@@ -1,0 +1,14 @@
+import java.util.*;
+class product{
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the range");
+int start =sc.nextInt();
+int end =sc.nextInt();
+int fact=1;
+for(int i=start;i<=end;i++){
+fact =fact*i;
+}
+System.out.println(fact);
+}
+}
