@@ -1,0 +1,35 @@
+.box{
+    border: solid 2px black;
+    height: 150px;
+    width: 150px;
+   align-content: center;
+   text-align: center;
+
+}
+.c1{
+    background-color: orange;
+
+}
+.c2{
+    background:url(./ashoka.jfif) no-repeat center/cover;
+}
+.c3{
+    background-color: green;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    justify-content: space-evenly;
+    row-gap: 20px;
+    
+}
+.main{
+    border: 1px solid black;
+    width: 150px;
+    
+    margin: 20px auto;
+   
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto;
+}

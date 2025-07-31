@@ -1,0 +1,104 @@
+.btn,.btn2,.btn3,.btn4,.btn5{
+
+    background-color: yellowgreen;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+   align-content: center;
+}
+
+.main{
+    background-color: aqua;
+   
+}
+.btn{
+    animation: changeBgColor 1s infinite;
+}
+.btn2{
+    animation:changeBgColors 1s  infinite ;
+}
+.btn3{
+    animation: alternatescroll 2.5s infinite linear alternate ;
+}
+.btn4{
+     animation: alternatescroll2 2.5s infinite ease-in alternate ;
+}
+.btn5{
+     animation: alternatescroll3 2.5s infinite ease-in-out alternate ;
+}
+@keyframes  changeBgColor{
+    from {
+        background-color: blue;
+    }
+    to{
+        background-color: aqua;
+    }
+    
+}
+@keyframes changeBgColors  {
+  0%{ background-color:aqua;}
+  20%{background-color: blanchedalmond;}
+  40%{ background-color: blue;}
+  60%{background-color: chartreuse;}
+  80%{background-color: brown;}
+  100%{background-color: aliceblue;}
+    
+}
+@keyframes alternatescroll {
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(400px);
+    }
+    
+}
+@keyframes alternatescroll2  {
+     from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(400px);
+    }
+}
+@keyframes alternatescroll3 {
+     from{
+        transform: rotate(50deg);
+    }
+    to{
+        transform:translate(100vh);
+    }
+    
+}
+.spinner{
+    height: 100px;
+    width: 100px;
+    border-inline:10px solid red ;
+    border-block:10px solid blue ;
+    margin-top: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+  
+    justify-content: center;
+    animation: spinneranimation 1s infinite alternate-reverse;
+   
+}
+.load{
+    position: relative;
+    top: -85px;;
+    left: 35px;
+    right:70px
+
+    
+}
+@keyframes  spinneranimation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}

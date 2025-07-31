@@ -1,0 +1,29 @@
+.container h1{
+    color: red;
+}
+/*DESCENDENT: descendnt is a direct or indirect  child first h1 is direct child where second one is indirect child */
+.container h1 span{
+    color: aqua;
+}
+/* CHILD :child selectors only select direct child not indirect child  */
+.inner>h1{
+    color: blue;
+}
+/* GENERALSIBLING:first outside element after parent ..ex h1 tag is appperaed after container ends */
+.container+h1{
+    color:green;
+    text-align: center;
+}
+/* ADJACENT SIBLING :IMEDIATE NEXT */
+.container~h1{
+    color:green;
+    text-align: center;
+}
+.container{
+     border: 2px solid black;
+    height: 80vh;
+    width :100 vh;
+
+ 
+
+}

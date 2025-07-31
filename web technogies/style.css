@@ -1,0 +1,26 @@
+h1{
+    color: blue;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+#mail{
+    text-align: center;
+    align-items: center;
+}
+#password{
+    text-align: center;
+}
+button{
+    display: block;
+    margin: auto;
+    padding: 0px 20 px 0px 20px;
+}
+div{
+    margin: 20px;
+}
+input{
+    display: block;
+    margin: auto;
+}

@@ -1,0 +1,40 @@
+import java.util.*;
+class technumber 
+{
+	public static int countofdigits(int num){
+		int count=0;
+		while(num>0){
+			num=num/10;
+		count++;
+	}
+	return count;
+	}
+	public static int expo( int base,int power){
+		int expo=1;
+		for(int i=1;i<=power;i++){
+			expo=expo*base;
+		}
+		return expo;
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the no");
+		int num=sc.nextInt();
+		int c=countofdigits( num);
+		int power=c/2;
+		int value=expo(10,power);
+		int firsthalf=num/e;
+		int secondhalf=num%e;
+		int sum=firsthalf+secondhalf;
+		int square=sum*sum;
+		if(square==num){
+			System.out.println("tech no");
+			}
+			else
+		{
+				System.out.println("not a tech");
+		}
+		
+	}
+}

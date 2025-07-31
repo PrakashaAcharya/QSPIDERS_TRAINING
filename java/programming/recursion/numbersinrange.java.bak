@@ -1,0 +1,18 @@
+import java.util.*;
+class numbersinrange {
+public static void range(int s,int e){
+	if(s<=e){
+		System.out.println(s);
+		range(s+1,e);
+	}
+}
+
+	public static void main(String[] args) 
+	{
+		Scanner sc=newScanner(System.in);
+		System.out.println("enter tha range");
+		int start=sc.nextInt();
+		int end=sc.nextInt();
+		range(start,end);
+	}
+}

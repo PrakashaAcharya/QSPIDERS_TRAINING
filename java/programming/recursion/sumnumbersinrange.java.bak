@@ -1,0 +1,21 @@
+import java.util.*;
+class sumnumbersinrange {
+	
+public static int  sum(int s,int e){
+	
+	if(s>e)
+		return 0;
+	else 
+		return s+sum(s+1,e);
+
+}
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter tha range");
+		int start=sc.nextInt();
+		int end=sc.nextInt();
+		
+		sum(start,end);
+	}
+}
